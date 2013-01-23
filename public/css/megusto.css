@@ -1,0 +1,155 @@
+body {
+	background-image:url(/img/lightpaperfibers.jpg);
+}
+
+h1,p,a {
+	font-family:'Amatic SC','Helvetica';
+}
+
+h1 {
+	font-size:56px;
+	margin:5px 0;
+}
+
+h2 {
+	font-family:'Courgette','Helvetica';
+	font-size:13px;
+	margin:5px 0;
+	color:#666;
+}
+
+ul.social {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+ul.social li {
+	display:inline-block;
+	margin:10px;
+}
+
+ul.social li a {
+	font-family:'Socialico';
+	text-decoration:none;
+	font-size:56px;
+	color:#555;
+}
+
+ul.items {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+ul.items li {
+	float:left;
+	width:280px;
+	height:280px;
+	margin:5px;
+	position:relative;
+	-webkit-perspective:600px;
+	-moz-perspective:600px;
+}
+
+.twitter a:hover {
+	color:#4099FF;
+}
+
+.blogger a:hover {
+	color:#fb913f;
+}
+
+.linkedin a:hover {
+	color:#007bb6;
+}
+
+.content {
+	margin:0 auto;
+	text-align:center;
+	width:900px;
+}
+
+.items .tweet div::before {
+	font-family:'Socialico';
+	content:'L';
+	color:rgba(0,0,0,0.25);
+	font-size:75px;
+	padding:0;
+	margin:0;
+}
+
+/* Flip */
+
+.panel div {
+	overflow:hidden;
+	border:1px solid #888;
+	width: inherit;
+	height: inherit;
+}
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.panel .front {
+	float:none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 900;
+
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.panel .front {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+}
+
+.panel.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+}
+
+.panel .back {
+	position:absolute;
+	top: 0;
+	z-index: 800;
+	margin:auto auto;
+	text-align: center;
+	line-height:inherit;
+	
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+
+	/* -- transition is the magic sauce for animation -- */
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.panel .back {
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+}
+	
+.panel.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+}

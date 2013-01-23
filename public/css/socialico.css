@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Socialico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Socialico'), url(/fonts/Socialico.ttf) format("truetype");;
+}

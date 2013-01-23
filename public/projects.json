@@ -1,0 +1,12 @@
+[
+	{
+		"name": "Little Dude",
+		"description": "A personal project and collaboration with a sketch artist. This is one of several vector concepts created for print.",
+		"image": "/img/projects/lildude.jpg"
+	},
+	{
+		"name": "London's Travel Site",
+		"description": "A challenging project. Lead designer for a device agnostic responsive website for one of the world’s largest transport networks. We  created a lightweight framework which utilised intelligent page loading to ensure lightning fast use on any device.\n\nDue to launch Q2 2013",
+		"image": "/img/projects/tfl.png"
+	}
+]
