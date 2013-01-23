@@ -21,6 +21,6 @@ $(document).ready(function() {
 
 
 	// Load tweets
-
+	//https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=chrismhs&count=2
 
 })

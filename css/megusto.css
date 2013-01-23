@@ -103,11 +103,11 @@ ul.items li {
 	-moz-transform-style: preserve-3d;
 	-moz-backface-visibility: hidden;
 
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .panel .front {
@@ -136,11 +136,11 @@ ul.items li {
 	-moz-backface-visibility: hidden;
 
 	/* -- transition is the magic sauce for animation -- */
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .panel .back {
