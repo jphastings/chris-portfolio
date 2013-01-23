@@ -19,9 +19,36 @@
 				<li class="linkedin"><a href="http://linkedin.com/chrismhs">I</a></li>
 			</ul>
 		</header>
-		{{{yield}}}
+		<ul class="items">
+			<script id="project" type="text/html">
+				<li class="image panel">
+					<div class="front">
+						<img src="{{image}}"/>
+					</div>
+					<div class="back">
+						<h1>{{name}}</h1>
+						<p>{{description}}</p>
+					</div>
+				</li>
+			</script>
+			<script id="tweet" type="text/html">
+				<li class="tweet panel">
+					<div class="front">
+						<blockquote>{{description}}</blockquote>
+					</div>
+				</li>
+			</script>
+			<script id="blogpost" type="text/html">
+				<li class="post panel">
+					<div class="front">
+						<blockquote>{{description}}</blockquote>
+					</div>
+				</li>
+			</script>
+		</ul>
 	</div>
 	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/ICanHaz.min.js" type="text/javascript"></script>
     <script src="/js/site.js" type="text/javascript"></script>
 </body>
 </html>
